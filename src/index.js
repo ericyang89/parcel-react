@@ -1,16 +1,11 @@
 import React,{Component} from "react";
 import { render } from "react-dom";
 
-// const App = () => <div>this is react111</div>;
-class App extends Component{
-  handle=()=>{
-    
-  }
-  render(){
-    return<div>
-      <button onClick={this.handle}>btn</button>
-    </div>
-  }
-}
+//1. 编写 react 代码
+const ele=<div>hello world!</div>
 
-render(<App />, document.getElementById("app"));
+//2. 准备 挂载点
+const hookNode=document.getElementById('app');
+
+//3. 挂载
+render(ele, hookNode);
